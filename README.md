@@ -1,6 +1,5 @@
 # Bangkok AQI (Air Quality Index) Forecast
-
-Forecasting Air Quality Index of Bangkok (Din Daeng District) in the next 5 days helps people prepare themselves to protect their heaths.
+What the AQI index at Din Daeng district, Bangkok will be in the next 5 days? Analyze changes in air pollutants' levels over the period and forecast the AQI index in the next 5 days using Vector Autoregression (VAR) compared to individual SARIMA.
 
 # Project Motivation
 
