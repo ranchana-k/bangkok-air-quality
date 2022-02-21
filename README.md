@@ -12,17 +12,23 @@ Like weather forecast, knowing how the air quality will be in the near future he
 # Objectives
 This project aim to forecast the quantity of PM2.5 which is one of the six pollutants used in AQI calculation. The forecasts were divided into 2 sections as followings:
 - Section 1: Analyzing and forecasting using VAR and AR
-- Section 2: Forecasting using RNN models
+- Section 2: Forecasting using RNN models (Unidirectional LSTM and Bidirectional LSTM)
 
 # Files Description
 
 - scrape_air4thai.py - code for scraping pollutants measurement
 - report_54t_dindaeng.csv - a dataset from crawling and used for time series analysis
-- cleaned_pollutants.csv - cleaned dataset after tidying data from 'report_54t_dindaeng.csv'
+- cleaned_dataset.csv - 'report_54t_dindaeng.csv' after cleaning
 - Bangkok PM2.5 Forecast - VAR and AR.ipynb - a python notebook illustrates how the data tidied, analysed and predicted
 - Bangkok PM2.5 Forecast - RNN models - a python notebook about training RNN models and their predictions
 
 # Summary
+## Section 1
+- There are no relationship among all pollutant as the errors between using VAR and AR were not significantly different.
+- The VAR and AR models could not predict well since the predictions had high percentage of error compared to the average. In case of PM2.5, root mean squared error of predicitons was 12.49 when its mean was at 40.59 (ug/m^3)
+
+## Section 2
+- 
 
 # Licenses / Acknowledgements / References
 
