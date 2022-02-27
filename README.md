@@ -11,8 +11,11 @@ Like weather forecast, knowing how the air quality will be in the near future he
 
 # Objectives
 This project aim to forecast the quantity of PM2.5 which is one of the six pollutants used in AQI calculation. The forecasts were divided into 2 sections as followings:
-- Section 1: Analyzing and forecasting using VAR and AR
+- Section 1: Time series analysis and forecasting using VAR and AR
 - Section 2: Forecasting using RNN models (Unidirectional LSTM and Bidirectional LSTM)
+
+# Method
+The data collected for time series analysis and prediction with VAR and AR were from Dec 1, 2021 to Jan 5, 2022. As it was hourly measured, there were 864 rows in total with 815 rows (with differencing level 1) for training and 48 rows for testing. Then, the dataset was updated to Feb 23, 2022 09:00:00 in order to train with RNN model.
 
 # Files Description
 
@@ -24,8 +27,8 @@ This project aim to forecast the quantity of PM2.5 which is one of the six pollu
 
 # Summary
 ## Section 1
-- There are no relationship among all pollutant as the errors between using VAR and AR were not significantly different.
-- The VAR and AR models could not predict well since the predictions had high percentage of error compared to the average. In case of PM2.5, root mean squared error of predicitons was 12.49 when its mean was at 40.59 (ug/m^3)
+- The PACF plots showed that pollutants changes in Din Daeng District, Bangkok had insignificantly relationship with its lag 1. 
+- Each pollutant seemed to have effects on each other as Vector Autoregression model gave less error than Autoregression model. However, both VAR and AR models were still not good to predict the value in the next two days (48 hours) as their RMSEs values were still high compared to their means.
 
 ## Section 2
 - 
