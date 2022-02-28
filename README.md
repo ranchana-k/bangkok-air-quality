@@ -15,7 +15,7 @@ This project aim to forecast the quantity of PM2.5 which is one of the six pollu
 - Section 2: Forecasting using RNN models (Unidirectional LSTM and Bidirectional LSTM)
 
 # Method
-The data collected for time series analysis and prediction with VAR and AR were from Dec 1, 2021 to Jan 5, 2022. As it was hourly measured, there were 864 rows in total with 815 rows (with differencing level 1) for training and 48 rows for testing. Then, the dataset was updated to Feb 23, 2022 09:00:00 in order to train with RNN model.
+The data collected for time series analysis and prediction with VAR and AR were from Dec 1, 2021 to Jan 5, 2022. As it was hourly measured, there were 864 rows in total with 815 rows (with differencing level 1) for training and 48 rows for testing. Then, the dataset was updated to Feb 23, 2022 09:00:00 (totally 864 + 1,162 = 2,026 rows) in order to train with RNN model.
 
 # Files Description
 
@@ -26,12 +26,12 @@ The data collected for time series analysis and prediction with VAR and AR were 
 - Bangkok PM2.5 Forecast - RNN models - a python notebook about training RNN models and their predictions
 
 # Summary
-## Section 1
+### Section 1
 - The PACF plots showed that pollutants changes in Din Daeng District, Bangkok had insignificantly relationship with its lag 1. 
-- Each pollutant seemed to have effects on each other as Vector Autoregression model gave less error than Autoregression model. However, both VAR and AR models were still not good to predict the value in the next two days (48 hours) as their RMSEs values were still high compared to their means.
+- Each pollutant seemed to have effects on each other as Vector Autoregression model gave less error than Autoregression model. However, both VAR and AR models were still not good to predict the value in the next two days (48 hours) as their RMSEs values were still high compared to their means. The RMSE of PM2.5 values for VAR and AR model (lags=1) were
+      PM2.5, VAR(1) RMSE: 15.956720802504154 
+      PM2.5, AR(1) RMSE: 19.483096653924058
 
-## Section 2
-- 
 
 # Licenses / Acknowledgements / References
 
