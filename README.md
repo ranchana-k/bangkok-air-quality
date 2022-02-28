@@ -28,9 +28,7 @@ The data collected for time series analysis and prediction with VAR and AR were 
 # Summary
 ### Section 1
 - The PACF plots showed that pollutants changes in Din Daeng District, Bangkok had insignificantly relationship with its lag 1. 
-- Each pollutant seemed to have effects on each other as Vector Autoregression model gave less error than Autoregression model. However, both VAR and AR models were still not good to predict the value in the next two days (48 hours) as their RMSEs values were still high compared to their means. The RMSE of PM2.5 values for VAR and AR model (lags=1) were
-      PM2.5, VAR(1) RMSE: 15.956720802504154 
-      PM2.5, AR(1) RMSE: 19.483096653924058
+- Each pollutant seemed to have effects on each other as Vector Autoregression model gave less error than Autoregression model. However, both VAR and AR models were still not good to predict the value in the next two days (48 hours) as their RMSEs values were still high compared to their means. The RMSE of PM2.5 values for VAR and AR model (lags=1) were 15.96 and 19.48 with average at about 40.
 
 
 # Licenses / Acknowledgements / References
